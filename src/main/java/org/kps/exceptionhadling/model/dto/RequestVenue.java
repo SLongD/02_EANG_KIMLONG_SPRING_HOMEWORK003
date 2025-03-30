@@ -12,7 +12,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RequestVenue {
     @NotBlank(message = "Venue name is required")
-    @Size(min = 10, max = 100, message = "Venue name must be between 10-100 characters")
+    @Size(min = 3, max = 100, message = "Venue name must be between 3-100 characters")
     @Pattern(regexp = "^[\\p{L}0-9\\s\\-'.,()]+$", message = "Invalid name input")
     private String venueName;
     @NotBlank(message = "Location is Require")

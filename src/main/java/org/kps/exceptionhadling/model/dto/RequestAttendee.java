@@ -13,7 +13,7 @@ import lombok.NoArgsConstructor;
 @NoArgsConstructor
 public class RequestAttendee {
     @NotBlank(message = "Attendee name is required")
-    @Size(min = 10, max = 100, message = "Name must be 2-100 characters")
+    @Size(min = 3, max = 100, message = "Name must be 3-100 characters")
     @Pattern(regexp = "^[\\p{L}0-9\\s\\-'.,()]+$", message = "Name contains invalid characters")
     private String attendeeName;
 

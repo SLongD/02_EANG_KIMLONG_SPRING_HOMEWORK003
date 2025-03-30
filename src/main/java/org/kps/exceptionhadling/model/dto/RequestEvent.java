@@ -14,7 +14,7 @@ import java.util.List;
 @NoArgsConstructor
 public class RequestEvent {
     @NotBlank(message = "Event name is required")
-    @Size(min = 10, max = 100, message = "Event name must be 2-100 characters")
+    @Size(min = 3, max = 100, message = "Event name must be 3-100 characters")
     @Pattern(regexp = "^[\\p{L}0-9\\s\\-'.,()]+$", message = "Event name contains invalid characters")
     private String eventName;
 
